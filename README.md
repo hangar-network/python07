@@ -4,9 +4,9 @@
 
 #### Professor: [Hallison da Paz](https://br.linkedin.com/in/hallison-paz-b5488329) (IME, 2014)
 
-* Ementa do Curso
+### Ementa do Curso
 
-I - Básico (dias 12 e 17 de maio de 2016)
+**I - Básico (dias 12 e 17 de maio de 2016)**
 
 1. Interpretador Python (preâmbulo sobre programação e instruções válidas)
 2. Estruturas Condicionais
@@ -15,7 +15,7 @@ I - Básico (dias 12 e 17 de maio de 2016)
 5. Funções I
 6. Módulos I
 
-II - Avançado (Mais 4 datas a confirmar: flexibilidade para se ajustar à turma, ao professor e ao Espaço)
+**II - Avançado (Mais 4 datas a confirmar: flexibilidade para se ajustar à turma, ao professor e ao Espaço)**
 
 1. Ambientes virtuais e instalação de pacotes
 2. Programação Orientada a Objetos
