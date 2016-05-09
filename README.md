@@ -43,7 +43,7 @@ Serão apresentados alguns pacotes que não vêm por padrão com a linguagem (en
 
 1. Python é uma linguagem bastante versátil e multi-paradigma. Se você não sabe programar, os conhecimentos adquiridos lhe serão úteis para aprender com mais facilidade diversas outras linguagens de programação. Se você programa em linguagens como C/C++ ou Java, vai achar que Python faz mágica devido à falta de exigências formais que existem nessas linguagens e à existência de várias estruturas de alto nível.
 
-2. Para se programar bem, é necessário praticar. Por conta disso, haverá várias tarefas propostas em vários níveis.
+2. Para se programar bem, é necessário praticar. Por conta disso, haverá várias tarefas propostas em vários níveis. *As tarefas, bem como resumos do curso serão publicados neste repositório.*
 
 3. Embora muitas horas de prática sejam necessárias para se tornar um mestre em quase qualquer coisa, com apenas 20 horas você já poderá perceber uma diferença **muito significativa** em relação ao momento em que não sabia nada ou muito pouco. [Assista a essa TED Talk e tire suas próprias conclusões :)](https://www.youtube.com/watch?v=5MgBikgcWnY)
 
