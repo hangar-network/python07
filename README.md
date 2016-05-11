@@ -4,6 +4,8 @@
 
 #### Professor: [Hallison da Paz](https://br.linkedin.com/in/hallison-paz-b5488329) (IME, 2014)
 
+#####[Faça aqui a sua inscrição :D !](http://www.costudying.org/espacobotafogo/python.php)
+
 ### Ementa do Curso
 
 **I - Básico (dias 12 e 17 de maio de 2016)**
