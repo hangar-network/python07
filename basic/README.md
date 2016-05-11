@@ -6,6 +6,8 @@
 
 Neste curso, iremos praticar vários recursos básicos da linguagem desenvolvendo um **Jogo da Forca**.
 
+<iframe width="400" height="250" frameborder="0" src="http://pythontutor.com/iframe-embed.html#code=first+%3D+%5B%22Ninja%22%5D%0Asecond+%3D+%5B%22fuma%C3%A7a%22%5D%0Aresult+%3D+first+%2B+second%0Asecond+%3D+%5B%22Ninja%22%5D%0Asecond.append(%22biscoito%22%29%0Asecond+%3D+first%0Asecond.append(%22!!!%22%29&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&py=3&rawInputLstJSON=%5B%5D&curInstr=7&codeDivWidth=350&codeDivHeight=400"> </iframe>
+
 **Por que Jogo da Forca?**
 
 Com o Jogo da Forca, iremos praticar:
