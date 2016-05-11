@@ -14,6 +14,7 @@
 4. Listas e Strings
 5. Funções I
 6. Módulos I
+7. [Projeto na prática](https://github.com/espacodeestudosbotafogo/python07/tree/master/basic)
 
 **II - Avançado (Mais 4 datas a confirmar: flexibilidade para se ajustar à turma, ao professor e ao Espaço)**
 
