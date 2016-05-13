@@ -4,7 +4,7 @@
 
 #### Professor: [Hallison da Paz](https://br.linkedin.com/in/hallison-paz-b5488329) (IME, 2014)
 
-#####[Faça aqui a sua inscrição :D !](http://www.costudying.org/espacobotafogo/python.php)
+##### Email para dúvidas: hallpaaz@gmail.com (se você não recebeu nenhum email meu ainda, por favor, me avise)
 
 ### Ementa do Curso
 
