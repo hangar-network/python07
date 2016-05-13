@@ -14,9 +14,10 @@ Tipicamente, um jogador (desafiante) *pensa em uma palavra* e *apresenta* uma li
 Exibe-se "_ _ _ _ _ _ _ _ _ _"
 
 Em termos de programação, até o momento, vemos necessidade de:  
+
 1. Solicitar uma palavra ao jogador
 2. Determinar o tamanho da palavra
-3. Exibir um traço para cada caractere na palavra.
+3. Exibir um traço para cada caractere da palavra
 
 Após isso, o jogador desafiado *tenta advinhar alguma letra* que esteja na palavra. *Caso ele acerte*, essa letra é colocada *no lugar do traço* que corresponde à sua posição na palavra *(quantas vezes ela ocorrer)*. *Caso ele erre*, o desafiante desenha uma parte do boneco enforcado.
 
@@ -24,7 +25,7 @@ Aqui, vemos a necessidade de:
 
 1. Solicitar uma letra ao jogador
 2. Verificar **se** a palavra armazenada contém a letra escolhida.
-3. Se contém, deve-se identificar todas as posições que correspondem a esta letra e substituir
+3. Se contém, deve-se identificar todas as posições que correspondem a esta letra e substituir (redesenhar o pontilhado)
 4. Se não contém, deve-se desenhar o boneco, o que corresponde a diminuir o número de tentativas do desafiado
 
 Você pode testar se um elemento pertence a uma lista ou a uma string com a palavra **in**.
