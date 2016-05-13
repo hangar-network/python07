@@ -39,6 +39,21 @@ Para finalizar, precisamos deixar o jogo em loop (repetição dos passos). O nú
 2. **While** deve verificar o valor verdade da expressão **as letras não foram todas preenchidas *e* o desafiado ainda possui ao menos uma chance**
 3. Ao sair do **while** deve-se verificar quem ganhou e exibir a mensagem adequada.
 
+**Observações: 
+
+* Strings são imutáveis. Uma forma de contornar este problema para fazer substituições é lidar com listas. Uma string pode ser convertida em uma lista da seguinte forma:
+
+  ```python
+  word = "tecnologia"
+  word_list = list(word)
+  ```
+* Listas podem ser aglutinadas para formar strings. Elas são aglutinadas e concatenadas ao final de alguma string. Portanto, para converter a lista em uma string novamente, use:
+
+  ```python
+  word_list = ['t', 'e', 'c', 'n', 'o', 'l', 'o', 'g', 'i', 'a']
+  word = "".join(word_list)
+  # aglutina a lista e concatena no final da string vazia, formando a palavra desejada
+  ```
 
 ####Etapa 2: Jogo da Forca para 1 jogador
 
