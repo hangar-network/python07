@@ -58,7 +58,69 @@ Para finalizar, precisamos deixar o jogo em loop (repetição dos passos). O nú
 
 ####Etapa 2: Jogo da Forca para 1 jogador
 
+Nesta etapa, as coisas ficam ainda mais interessantes, pois precisaremos bolar uma maneira de gerar palavras para o jogador. Para prosseguir, é necessário que você já tenha visto como importar módulos e — para ficar legal mesmo — como lidar com arquivos.
 
+** Primeira tentativa **
+
+Uma coisa que talvez venha na sua mente é a necessidade de gerar resultados aleatórios. Isto é correto, pois queremos que cada partida seja diferente da anterior. Talvez, num primeiro momento, você até pense em tentar criar as palavras por algum método aleatório (por exemplo, gerar cada letra aleatoriamente). 
+
+Infelizmente, essa não é uma boa solução. Gerar letra por letra aleatoriamente não nos garante que teremos uma palavra (algo que esteja no dicionário da nossa língua) ao final do processo. Elaborar um procedimento para gerar palavras dicionarizadas aleatoriamente seria uma tarefa extremamente difícil!
+
+** Segunda Tentativa **
+
+Ok, não podemos gerar uma palavra aleatoriamente, o que faremos, então? Ao invés de gerar, podemos *escolher* uma palavra aleatoriamente. 
+
+A ideia consiste em ter um conjunto de palavras previamente selecionadas armazenadas em algum lugar e, então, escolher uma delas aleatoriamente para jogar. Vamos começar bem simples.
+
+Imagine que você cria em seu programa uma *lista* que contém várias palavras da língua portuguesa (ou outro idioma escolhido pro jogo): 
+
+```python
+  palavras_validas = ["estudar", "programação", "amizade", "matemática", "livro"]
+```
+
+Agora, podemos escolher aleatoriamente uma palavra da lista **palavras_validas** . Para isso, precisaremos importar o *módulo random*. Poderíamos gerar um índice (número) aleatório entre **0*** e **len(palavras_validas) - 1** e, então, acessar a palavra correspondente a esse índice. No entanto, Python nos permite fazer as coisas de uma forma mais direta:
+
+```python
+  import random
+  palavras_validas = ["estudar", "programação", "amizade", "matemática", "livro"]
+  palavra_selecionada = random.choice(palavras_validas)
+```
+
+O módulo *'random'* possui uma função chamada *'choice'*, que recebe uma lista de quaisquer elementos e retorna uma escolha aleatória de um elemento da lista. Armazenamos o resultado deste retorno na variável palavra_selecionada.
+
+Pronto! Assim já temos uma maneira de jogar contra o computador. 
+
+— "Ah, mas eu vou ter que escrever palavra por palavra em uma lista?!" 
+
+Desgastante, né? Além de desgastante, é uma estrutura pouco flexível, difícil de expandir e não é uma boa prática de programação manter dados grandes direto no código. Vamos ver como solucionar esse problema.
+
+** Base de dados de Palavras **
+
+Nós iremos manter uma base de dados (não é um banco de dados) externa ao nosso código: *um arquivo de texto com palavras válidas*.
+
+O ideal seríamos ter vários arquivos com todas as palavras dicionarizadas do idioma (separadas por vírgula, ou uma em cada linha etc). Como nós não temos isso disponível, vamos fazer algo menor, porém na mesma ideia! **Vamos pegar dados não estruturados e transformá-los em dados estruturados**.
+
+** Coleta de dados **
+
+Para simplificar, não vamos fazer o programa que captura os dados, apenas o que trata os dados. Desta forma, você deve, manualmente copiar e colar alguns textos da internet em um arquivo de texto. Sugiro pegar um artigo da [wikipedia](https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal) que não trate de um anglicismo.
+
+Salve este arquivo com algum nome tipo: *"texto_comum.txt"*.
+
+** Tratamento dos dados **
+
+Selecionar uma palavra do texto que pegamos seria bem complicado, precisamos de um arquivo que seja mais fácil de lidar. O ideal seria um arquivo em que as palavras estivessem bem demarcadas, por exemplo, separadas por vírgulas, uma em cada linha etc. Além disso, temos que eliminar pontuação, artigos, conjunções etc... 
+
+O tratamento completo do dado manualmente pode ser bastante extenso (por exemplo, você quer aceitar plural? Flexões de verbos? Flexões de gênero?) e seria assunto para um curso de *Processamento de Linguagem Natural* (NLP). Meu objetivo com este exercício é apenas que você **reflita sobre essas dificuldades de um programa real** e, principalmente, pratique técnicas básicas usando Python: abrir arquivo, processar uma string, escrever arquivo. 
+
+Assim, nós vamos efetuar "apenas" as seguintes operações:
+
+1. ler o texto completo
+2. separar as palavras
+3. remover as pontuações
+4. remover palavras duplicadas
+5. escrever uma palavra por linha
+
+Talvez você se sinta apto a implementar uma ou todas as etapas acima. Dessa forma, deixarei o código comentado neste link, caso queira tentar e depois verificar.
 
 ####Etapa 3: Modos de dificuldade
 
