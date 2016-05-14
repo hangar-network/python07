@@ -120,7 +120,7 @@ Assim, nós vamos efetuar "apenas" as seguintes operações:
 4. remover palavras duplicadas
 5. escrever uma palavra por linha
 
-Talvez você se sinta apto a implementar uma ou todas as etapas acima. Dessa forma, deixarei o código comentado neste link, caso queira tentar e depois verificar.
+Talvez você se sinta apto a implementar uma ou todas as etapas acima. Dessa forma, deixarei o [código comentado neste link](https://github.com/espacodeestudosbotafogo/python07/blob/master/samples/text_processing.py), caso queira tentar e depois verificar.
 
 ####Etapa 3: Modos de dificuldade
 
