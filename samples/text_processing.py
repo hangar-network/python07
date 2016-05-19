@@ -1,17 +1,28 @@
+import os
 
+
+data_folder = "raw_data"
+results_folder = "structured_data"
 # lista com todas as marcações que desejamos ignorar
 marks = [",", ";", ".", "!", "?", "\"", "\'", "%", "[", "]", "(", ")" ]
 # A contrabarra é utilizada para sinalizar que a aspas utilizada faz parte da string
 # e não está tentando fechá-la. Chamamos isso de "fazer escape do caractere".
 
-
-def tokenize(filename):
-    """ This function ..."""
+def tokenize(filename, outputname = None):
+    """ This function converts a raw text input into a file where each line
+        contains a single word and no word is duplicated
+    """
 
     # Ao final, esta lista vai conter todas as palavras separadas
     tokens = []
+    inputfilename = filename
+    # Se o arquivo não for encontrado no caminho passado, tentamos encontrá-lo
+    # no diretorio padrão de dados (que definimos acima)
+    if not os.path.exists(filename):
+        inputfilename = os.path.join(data_folder, os.path.basename(filename))
+
     # abre o arquivo para leitura
-    with open(filename, 'r') as text_file:
+    with open(inputfilename, 'r') as text_file:
         # a variável text_file existe apenas dentro deste bloco; ela é o nosso
         # ponto de acesso para qualquer operação no arquivo
         textline = text_file.readline()
@@ -39,12 +50,18 @@ def tokenize(filename):
     # remove palavras duplicadas
     tokens = list(set(tokens)) # explicarei em sala de aula
 
-    with open("palavras.txt", "w") as token_file:
+    # Se nenhum nome foi dado ao arquivo de saída, criamos um nome baseado no
+    # arquivo de entrada e salvamos no diretorio de resultados (definido acima)
+    if outputname is None:
+        outputname = os.path.join(results_folder ,"tokens_" + os.path.basename(filename))
+
+    with open(outputname, "w") as token_file:
         for t in tokens:
             # concatena uma quebra de linha ao final de cada palavra
             token_file.write(t + "\n")
-    print("Sucesso! Verifique o arquivo 'palavras.txt' ")
+    print("Sucesso! Verifique o resultado em '{}' no diretório '{}'".format(
+            os.path.basename(outputname), results_folder))
 
 
 # chama a função e roda o código
-tokenize("texto_comum.txt")
+tokenize(input("Digite o nome do arquivo a ser processado: "))
