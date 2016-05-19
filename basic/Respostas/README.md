@@ -60,13 +60,13 @@ Para finalizar, precisamos deixar o jogo em loop (repetição dos passos). O nú
 
 Nesta etapa, as coisas ficam ainda mais interessantes, pois precisaremos bolar uma maneira de gerar palavras para o jogador. Para prosseguir, é necessário que você já tenha visto como importar módulos e — para ficar legal mesmo — como lidar com arquivos.
 
-** Primeira tentativa **
+**Primeira tentativa**
 
 Uma coisa que talvez venha na sua mente é a necessidade de gerar resultados aleatórios. Isto é correto, pois queremos que cada partida seja diferente da anterior. Talvez, num primeiro momento, você até pense em tentar criar as palavras por algum método aleatório (por exemplo, gerar cada letra aleatoriamente). 
 
 Infelizmente, essa não é uma boa solução. Gerar letra por letra aleatoriamente não nos garante que teremos uma palavra (algo que esteja no dicionário da nossa língua) ao final do processo. Elaborar um procedimento para gerar palavras dicionarizadas aleatoriamente seria uma tarefa extremamente difícil!
 
-** Segunda Tentativa **
+**Segunda Tentativa**
 
 Ok, não podemos gerar uma palavra aleatoriamente, o que faremos, então? Ao invés de gerar, podemos *escolher* uma palavra aleatoriamente. 
 
@@ -94,19 +94,19 @@ Pronto! Assim já temos uma maneira de jogar contra o computador.
 
 Desgastante, né? Além de desgastante, é uma estrutura pouco flexível, difícil de expandir e não é uma boa prática de programação manter dados grandes direto no código. Vamos ver como solucionar esse problema.
 
-** Base de dados de Palavras **
+**Base de dados de Palavras**
 
 Nós iremos manter uma base de dados (não é um banco de dados) externa ao nosso código: *um arquivo de texto com palavras válidas*.
 
 O ideal seríamos ter vários arquivos com todas as palavras dicionarizadas do idioma (separadas por vírgula, ou uma em cada linha etc). Como nós não temos isso disponível, vamos fazer algo menor, porém na mesma ideia! **Vamos pegar dados não estruturados e transformá-los em dados estruturados**.
 
-** Coleta de dados **
+**Coleta de dados**
 
 Para simplificar, não vamos fazer o programa que captura os dados, apenas o que trata os dados. Desta forma, você deve, manualmente copiar e colar alguns textos da internet em um arquivo de texto. Sugiro pegar um artigo da [wikipedia](https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal) que não trate de um anglicismo.
 
 Salve este arquivo com algum nome tipo: *"texto_comum.txt"*.
 
-** Tratamento dos dados **
+**Tratamento dos dados**
 
 Selecionar uma palavra do texto que pegamos seria bem complicado, precisamos de um arquivo que seja mais fácil de lidar. O ideal seria um arquivo em que as palavras estivessem bem demarcadas, por exemplo, separadas por vírgulas, uma em cada linha etc. Além disso, temos que eliminar pontuação, artigos, conjunções etc... 
 
@@ -120,7 +120,7 @@ Assim, nós vamos efetuar "apenas" as seguintes operações:
 4. remover palavras duplicadas
 5. escrever uma palavra por linha
 
-Talvez você se sinta apto a implementar uma ou todas as etapas acima. Dessa forma, deixarei o código comentado neste link, caso queira tentar e depois verificar.
+Talvez você se sinta apto a implementar uma ou todas as etapas acima. Dessa forma, deixarei o [código comentado neste link](https://github.com/espacodeestudosbotafogo/python07/blob/master/samples/text_processing.py), caso queira tentar e depois verificar.
 
 ####Etapa 3: Modos de dificuldade
 
