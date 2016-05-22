@@ -1,4 +1,4 @@
-import cripto
+import cripto as cp
 import os
 
 

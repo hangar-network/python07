@@ -3,7 +3,7 @@ import random
 
 def encrypt(text, key = None):
     """Essa funcao criptografa um texto com cifra de Cesar"""
-
+    
     alphabet_size = ord('Z') - ord('A') + 1
     if key is None:
         print("Chave gerada automaticaente")
