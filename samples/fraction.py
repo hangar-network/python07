@@ -1,5 +1,3 @@
-
-
 class Fraction:
     """ This class represents a fraction (rational number with numerator and
         denominator).
@@ -28,6 +26,9 @@ class Fraction:
     def __truediv__(self, other):
         pass
 
+    def __floordiv__(self, other):
+        pass
+
     def __repr__(self):
         return str(self)
 
@@ -35,12 +36,12 @@ class Fraction:
         representation = "{}/{}".format(self.numerator, self.denominator)
         return representation
 
-    def __eq__(self, outra):
-        if self.numerador == outra.numerador
-        and self.denominador == outra.denominador:
-            return True
-        else
-            return False
+    # def __eq__(self, outra):
+    #     if self.numerador == outra.numerador
+    #     and self.denominador == outra.denominador:
+    #         return True
+    #     else
+    #         return False
     def __lt__(self, outra):
         if self.numerador <= outra.numerador:
             return True
@@ -76,3 +77,13 @@ class Fraction:
         mdc = math.gcd(self.numerator, self.denominator)
         self.numerator = self.numerator/mdc
         self.denominator = self.denominator/mdc
+
+
+if __name__ == '__main__':
+    a = Fraction(2, 4)
+    print(a)
+    lista = [a]
+    print(lista)
+
+    a = a.simplify()
+    #Fraction.simplify(a)

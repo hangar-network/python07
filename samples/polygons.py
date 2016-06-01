@@ -69,8 +69,10 @@ if __name__ == '__main__':
     try:
         triangle = Triangle([[-100,0], [100,0], [0, 200]])
         poly = Polygon([[-100,0], [100,0], [0, 200]])
-    except WrongSizeError as e:
+    except WrongSizeError:
         print(e)
+    except ValueError:
+
     else:
         print(triangle.area())
         triangle.draw()

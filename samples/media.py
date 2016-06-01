@@ -1,3 +1,5 @@
+
+
 class Artist:
     def __init__(self, name, albuns = []):
         self.name = name
@@ -59,3 +61,9 @@ class Music:
 
     def __repr__(self):
         return "{}".format(self.title)
+
+
+if __name__ == '__main__':
+    joao = Artist("Joao das Coves")
+    novo_album = Album("Meus covers", 2016)
+    joao.release_album(novo_album)
